@@ -89,67 +89,67 @@ textarea {
 @font-face {
   font-weight: 800;
   font-family: "Code Next";
-  src: url("/assets/code-next-extrabold.otf") format("opentype");
+  src: url("/assets/fonts/code-next-extrabold.otf") format("opentype");
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Code Next Italic";
-  src: url("/assets/code-next-extrabold-italic.otf") format("opentype");
+  src: url("/assets/fonts/code-next-extrabold-italic.otf") format("opentype");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Code Next";
-  src: url("/assets/code-next-regular.ttf") format("truetype");
+  src: url("/assets/fonts/code-next-regular.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 300;
   font-family: "Code Next";
-  src: url("/assets/code-next-light.ttf") format("truetype");
+  src: url("/assets/fonts/code-next-light.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 900;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-black.otf") format("opentype");
+  src: url("/assets/fonts/kinetika-black.otf") format("opentype");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-bold.ttf") format("truetype");
+  src: url("/assets/fonts/kinetika-bold.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 600;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-semibold.ttf") format("truetype");
+  src: url("/assets/fonts/kinetika-semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-medium.ttf") format("truetype");
+  src: url("/assets/fonts/kinetika-medium.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-regular.ttf") format("truetype");
+  src: url("/assets/fonts/kinetika-regular.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 300;
   font-family: "Kinetika";
-  src: url("/assets/kinetika-light.otf") format("opentype");
+  src: url("/assets/fonts/kinetika-light.otf") format("opentype");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Montserrat Regular";
-  src: url("/assets/montserrat-regular.ttf") format("truetype");
+  src: url("/assets/fonts/montserrat-regular.ttf") format("truetype");
 }
 
 /* CSS Reset */
@@ -675,6 +675,7 @@ section {
 .articles-section .related-card-img {
   max-width: 100%;
   height: 262px;
+  border-radius: 10px;
 }
 
 .articles-section .related-card-title {
