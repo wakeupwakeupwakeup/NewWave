@@ -210,7 +210,7 @@ a {
   color: #fff;
 }
 
-section:not(.main-section) {
+section:not(.main-section, .quiz-section) {
   padding-top: 94px;
 }
 
@@ -259,7 +259,6 @@ section:not(.main-section) {
 }
 
 .header .logo {
-  width: 66px;
   height: 16px;
 }
 
@@ -275,6 +274,14 @@ section:not(.main-section) {
 .header .nav-link {
   font-family: "Montserrat Regular", serif;
   font-weight: 400;
+}
+
+.header .container-item {
+  margin-right: 6px;
+}
+
+.header .container-item:last-child {
+  margin: 0;
 }
 
 .header .language {
@@ -382,6 +389,7 @@ section:not(.main-section) {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 16px;
+  color: #111;
 }
 
 .main-section .service-description {
@@ -440,6 +448,7 @@ section:not(.main-section) {
   font-family: "Kinetika", serif;
   font-weight: 700;
   font-size: 24px;
+  color: #111;
 }
 
 .offers-section .card-price {
@@ -576,6 +585,41 @@ section:not(.main-section) {
 /*  flex-direction: column;*/
 /*  align-items: center;*/
 /*}*/
+
+.quiz-section {
+  text-align: center;
+  padding: 232px 0;
+}
+
+.quiz-section .title {
+  font-weight: 700;
+}
+
+.quiz-section .color {
+  color: #225cef;
+}
+
+.quiz-section .quiz-button-wrapper {
+  margin-top: 96px;
+}
+
+.quiz-section .quiz-button {
+
+  font-family: "Kinetika", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background-color: #1153fc;
+  padding: 32px 64px;
+  position: relative;
+}
+
+.quiz-section .quiz-icon {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+}
 
 /*---ARTICLES---*/
 
@@ -766,6 +810,10 @@ section:not(.main-section) {
   font-size: 20px;
 }
 
+.support-form-section {
+  padding: 128px 0;
+}
+
 .support-form-section .text-s {
   margin: 42px 0;
 }
@@ -809,13 +857,30 @@ section:not(.main-section) {
   background-color: #2d61e8;
 }
 
+.footer {
+
+}
+
+
 .footer-container {
   display: flex;
+  justify-content: space-between;
+  padding: 124px 0;
+  height: 146px;
+
 }
 
 .footer-logo-container {
   display: flex;
   flex-direction: column;
+  width: 216px;
+}
+
+.footer-text {
+  font-family: "Kinetika", sans-serif;
+  font-weight: 300;
+  margin-top: 32px;
+  line-height: 32px;
 }
 
 .footer-menu {
@@ -823,7 +888,34 @@ section:not(.main-section) {
 }
 
 .footer-menu-item {
-  width: 50%;
+  font-family: "Kinetika", sans-serif;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.footer-menu-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 182px;
+}
+
+.footer-menu-column:last-child {
+  margin: 0;
+}
+
+.footer .contacts-container {
+  margin: 0;
+}
+
+.footer .contacts-link {
+  font-size: 17px;
+  font-family: "Kinetika", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1170px) and (min-width: 960px) {
+
 }
 
 /* ==========================================================================
