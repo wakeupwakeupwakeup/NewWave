@@ -1,0 +1,117 @@
+body {
+  background-image: none;
+}
+
+.color {
+  color: #4274f3;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-content {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 72px;
+}
+
+.header .author-img {
+  width: 64px;
+  margin-right: 18px;
+}
+
+.header .author-name, .author-date {
+  font-size: 20px;
+}
+
+.header .author-name {
+  font-weight: 700;
+}
+
+.article-image-wrapper {
+  background: linear-gradient(to top, #111, transparent), url("/img/phuket1.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 730px;
+  line-height: 730px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 128px;
+}
+
+
+.article-image-wrapper .title {
+  font-size: 60px;
+}
+
+.article-image-wrapper .title:after {
+  display: inline-block;
+  content: "";
+  background: url("/img/icons/arrow_down.png");
+  position: absolute;
+  top: 65%;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+}
+
+.slider-title .title {
+  margin-bottom: 8px;
+}
+
+.slider-title .text {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.banner-wrapper {
+  background: url("/img/banner_bg.png") no-repeat center left;
+  border-radius: 15px;
+  padding: 64px 48px;
+}
+
+.banner-container {
+  width: 610px;
+}
+
+.banner .title {
+  font-size: 46px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.banner .text {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}

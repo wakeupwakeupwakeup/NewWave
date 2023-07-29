@@ -1,6 +1,4 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -86,71 +84,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@font-face {
-  font-weight: 800;
-  font-family: "Code Next";
-  src: url("/assets/fonts/code-next-extrabold.otf") format("opentype");
-}
 
-@font-face {
-  font-weight: 800;
-  font-family: "Code Next Italic";
-  src: url("/assets/fonts/code-next-extrabold-italic.otf") format("opentype");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Code Next";
-  src: url("/assets/fonts/code-next-regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 300;
-  font-family: "Code Next";
-  src: url("/assets/fonts/code-next-light.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 900;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-black.otf") format("opentype");
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 600;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-semibold.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 500;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 300;
-  font-family: "Kinetika";
-  src: url("/assets/fonts/kinetika-light.otf") format("opentype");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Montserrat Regular";
-  src: url("/assets/fonts/montserrat-regular.ttf") format("truetype");
-}
 
 /* CSS Reset */
 html,
@@ -187,6 +121,7 @@ pre {
 
 
 body {
+  font-family: 'Ubuntu', sans-serif;
   color: #fff;
   background-image: url("/img/background.png");
   background-size: auto 968px;
@@ -215,16 +150,15 @@ section:not(.main-section, .quiz-section) {
 }
 
 .wrapper {
-  width: 1170px;
+  max-width: 1170px;
   padding: 64px 0;
   margin: 0 auto;
 
 }
 
 .title {
-  font-family: "Kinetika", serif;
   font-size: 45px;
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
   letter-spacing: -1px;
 }
@@ -234,20 +168,24 @@ section:not(.main-section, .quiz-section) {
 }
 
 .category-text {
-  font-family: "Code Next", serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #35F22E;
+}
+
+.category-value {
   font-size: 20px;
   font-weight: 400;
   color: #056CF2;
 }
 
 .text-m {
-  font-family: "Code Next", serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .text-s {
-  font-family: "Code Next", serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -272,7 +210,7 @@ section:not(.main-section, .quiz-section) {
 }
 
 .header .nav-link {
-  font-family: "Montserrat Regular", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -290,7 +228,7 @@ section:not(.main-section, .quiz-section) {
 }
 
 .header .lang-value {
-  font-family: "Montserrat Regular", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-right: 16px;
 }
@@ -301,25 +239,21 @@ section:not(.main-section, .quiz-section) {
 
 .main-section .main-heading .title {
   font-size: 60px;
-  font-family: "Kinetika", serif;
   font-weight: 700;
 }
 
 .main-section .main-heading .subtitle {
   color: #35F22E;
   font-size: 24px;
-  font-family: "Kinetika", serif;
   font-weight: 400;
   margin-top: 16px;
 }
 
-.main-section .mood-selector {
-  margin: 96px 0;
-}
+
 
 .main-section .selector-heading {
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-family: "Kinetika", serif;
   font-weight: 700;
 }
 
@@ -327,12 +261,16 @@ section:not(.main-section, .quiz-section) {
   color: #35F22E;
 }
 
-.main-section .mood-container {
+.main-section .mood-selector {
+  margin: 96px 0;
+}
+
+.mood-container {
   display: flex;
   margin-top: 32px;
 }
 
-.main-section .mood-item {
+.mood-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,23 +278,21 @@ section:not(.main-section, .quiz-section) {
   margin-right: 90px;
 }
 
-.main-section .mood-name {
+.mood-name {
   width: 90px;
-  font-family: "Kinetika", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-top: 8px;
 }
 
 .main-section .main-subheading .subheading {
-  font-family: "Kinetika", serif;
   font-weight: 700;
   font-size: 40px;
 }
 
 .main-section .main-subheading .subheading-description {
   width: 650px;
-  font-family: "Code Next", serif;
   font-size: 16px;
   margin-top: 16px;
 }
@@ -385,22 +321,20 @@ section:not(.main-section, .quiz-section) {
 }
 
 .main-section .service-name {
-  font-family: "Kinetika", serif;
   font-size: 18px;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 16px;
   color: #111;
 }
 
 .main-section .service-description {
-  font-family: "Kinetika", serif;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .main-section .more-button {
-  font-family: "Kinetika", serif;
   font-size: 16px;
   font-weight: 600;
   color: #111;
@@ -445,21 +379,19 @@ section:not(.main-section, .quiz-section) {
 }
 
 .offers-section .card-title {
-  font-family: "Kinetika", serif;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #111;
 }
 
 .offers-section .card-price {
   color: #056CF2;
-  font-family: "Kinetika", serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .offers-section .price-before,.price-after {
-  font-family: "Kinetika", serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -505,7 +437,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .offers-section .card-duration,.option-name {
-  font-family: "Kinetika", serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -603,23 +534,16 @@ section:not(.main-section, .quiz-section) {
   margin-top: 96px;
 }
 
-.quiz-section .quiz-button {
-
-  font-family: "Kinetika", sans-serif;
-  font-size: 20px;
+.general-button {
+  font-size: 25px;
   font-weight: 500;
-  text-transform: uppercase;
   border-radius: 30px;
   background-color: #1153fc;
   padding: 32px 64px;
   position: relative;
+  display: inline-block;
 }
 
-.quiz-section .quiz-icon {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-}
 
 /*---ARTICLES---*/
 
@@ -672,7 +596,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .author-name {
-  font-family: "Kinetika", serif;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -680,7 +603,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .author-date {
-  font-family: "Kinetika", serif;
   font-weight: 400;
   font-size: 14px;
   color: #e2e3e3;
@@ -692,7 +614,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .learn-more-button {
-  font-family: "Kinetika", serif;
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
@@ -706,37 +627,36 @@ section:not(.main-section, .quiz-section) {
 
 /*---------------*/
 
-.articles-section .related-articles-wrapper {
+.related-articles-wrapper {
   margin-top: 128px;
 }
 
-.articles-section .related-articles-container {
+.related-articles-container {
   display: flex;
   justify-content: space-between;
 }
 
-.articles-section .related-card-wrapper {
+.related-card-wrapper {
   width: 370px;
 }
 
-.articles-section .related-card-img {
+.related-card-img {
   max-width: 100%;
   height: 262px;
   border-radius: 10px;
   margin-bottom: 24px;
 }
 
-.articles-section .related-card-title {
-  font-family: "Kinetika", serif;
+.related-card-title {
   font-weight: 500;
   font-size: 24px;
 }
 
-.articles-section .related-card-description-container>* {
+.related-card-description-container>* {
   margin-bottom: 24px;
 }
 
-.articles-section .related-card-description-container:last-child {
+.related-card-description-container:last-child {
   margin-bottom: 0;
 }
 
@@ -765,7 +685,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .review-text {
-  font-family: "Kinetika", serif;
   font-weight: 500;
   font-size: 16px;
   margin: 42px 0;
@@ -805,7 +724,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .contacts-link {
-  font-family: "Kinetika", serif;
   font-weight: 300;
   font-size: 20px;
 }
@@ -832,7 +750,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .support-form-input::placeholder {
-  font-family: "Kinetika", serif;
   font-weight: 300;
   font-size: 16px;
   color: #a7dafa;
@@ -843,7 +760,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .support-form-submit {
-  font-family: "Kinetika", serif;
   font-weight: 500;
   font-size: 20px;
   color: #fff;
@@ -877,7 +793,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .footer-text {
-  font-family: "Kinetika", sans-serif;
   font-weight: 300;
   margin-top: 32px;
   line-height: 32px;
@@ -888,7 +803,6 @@ section:not(.main-section, .quiz-section) {
 }
 
 .footer-menu-item {
-  font-family: "Kinetika", sans-serif;
   font-weight: 300;
   margin-bottom: 40px;
 }
@@ -910,12 +824,34 @@ section:not(.main-section, .quiz-section) {
 
 .footer .contacts-link {
   font-size: 17px;
-  font-family: "Kinetika", sans-serif;
   font-weight: 300;
 }
 
-@media screen and (max-width: 1170px) and (min-width: 960px) {
+@media screen and (max-width: 480px) {
 
+}
+
+@media screen and (max-width: 760px) {
+  .mood-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mood-item {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding: 60px 32px;
+  }
+
+  .
 }
 
 /* ==========================================================================
