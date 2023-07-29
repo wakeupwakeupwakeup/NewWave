@@ -131,6 +131,10 @@ body {
   -ms-overflow-style: none;
 }
 
+p {
+  font-family: Montserrat, sans-serif;
+}
+
 body::-webkit-scrollbar {
   width: 0;
 }
@@ -164,7 +168,7 @@ section:not(.main-section, .quiz-section) {
 }
 
 .section-title {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .category-text {
@@ -650,14 +654,11 @@ section:not(.main-section, .quiz-section) {
 .related-card-title {
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 8px;
 }
 
-.related-card-description-container>* {
-  margin-bottom: 24px;
-}
-
-.related-card-description-container:last-child {
-  margin-bottom: 0;
+.related-card-wrapper .author-wrapper {
+  margin-top: 24px;
 }
 
 .reviews-section .color {
