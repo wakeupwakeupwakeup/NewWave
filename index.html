@@ -15,7 +15,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-1.8.1/slick/slick-theme.css"/>  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
 
@@ -42,6 +43,9 @@
       <div class="language">
         <span class="lang-value">Eng</span>
         <img src="img/icons/lang_en.png" alt="eng" class="lang-icon">
+      </div>
+      <div class="burger-menu">
+        <img src="img/icons/burger_icon.png" alt="" class="burger-icon">
       </div>
     </header>
     <main class="main">
@@ -275,8 +279,10 @@
       </section>
       <section class="articles-section">
         <div class="article-wrapper">
-          <div class="article-card">
-            <div class="author-button-wrapper">
+          <h2 class="title title-m"><span class="color">Open the gates do the exotic</span> world of Thailand with our blog</h2>
+          <div class="article-card-wrapper">
+            <div class="article-card">
+              <div class="author-button-wrapper">
                 <div class="author-wrapper">
                   <img src="img/author_avatar.png" alt="" class="author-img">
                   <div class="author-data-container">
@@ -284,16 +290,18 @@
                     <span class="author-date">11 feb, 2023</span>
                   </div>
                 </div>
-              <div class="learn-more-button-wrapper">
-                <a href="" class="learn-more-button">Learn more</a>
-                <img src="img/icons/learn_more_icon.png" alt="" class="learn-more-button-icon">
+                <div class="learn-more-button-wrapper">
+                  <a href="" class="learn-more-button">Learn more</a>
+                  <img src="img/icons/learn_more_icon.png" alt="" class="learn-more-button-icon">
+                </div>
               </div>
             </div>
           </div>
+
           <div class="article-content-container">
             <h2 class="title"><span class="color">Open the gates do the exotic</span> world of Thailand with our blog</h2>
             <p class="text-m">
-              Here you will fi fi fi find many interesting and useful articles that will help you better understand the opportunities that Thailand offers for various events. Our team of professionals collects the latest news for you and publishes information about the latest trends and popular events taking place in this amazing country.
+              Here you will find many interesting and useful articles that will help you better understand the opportunities that Thailand offers for various events. Our team of professionals collects the latest news for you and publishes information about the latest trends and popular events taking place in this amazing country.
             </p>
           </div>
         </div>
@@ -430,6 +438,23 @@
       </section>
       <section class="support-form-section">
         <div class="support-form-container">
+          <div class="request-wrapper">
+            <div class="request-container">
+              <h2 class="title">Leave a request</h2>
+              <p class="text">Contact us in any convenient way by phone, in massengers: WhatsApp, Telegram, Facebook or using the
+                feedback form.</p>
+              <div class="contacts-link-wrapper">
+                <img src="img/icons/phone_icon.png" alt="" class="contacts-icon">
+                <a href="" class="contacts-link">Thailand +66-99-999-9999</a>
+              </div>
+              <div class="contact-links-container">
+                <a href="" class="links-container-item"><img src="img/icons/tg_icon.png" alt="" class="links-item-img"></a>
+                <a href="" class="links-container-item"><img src="img/icons/wa_icon.png" alt="" class="links-item-img"></a>
+                <a href="" class="links-container-item"><img src="img/icons/fb_icon.png" alt="" class="links-item-img"></a>
+              </div>
+              <a href="" class="mail_link">newwave@mail.ru</a>
+            </div>
+          </div>
           <div class="contacts-wrapper">
             <h2 class="title">Customer support</h2>
             <div class="contacts-container">
@@ -475,8 +500,7 @@
             <div class="footer-logo-wrapper">
               <img src="img/logo.png" alt="logo" class="logo">
             </div>
-            <span class="footer-text">Your personal guide to the world of unforgettable leisure in Phuket.
-our tours</span>
+            <span class="footer-text">Copyright 2023. All rights reserved.<br>Website design by MKT Team</span>
           </div>
           <div class="footer-menu">
             <div class="footer-menu-column">
@@ -511,6 +535,11 @@ our tours</span>
     </footer>
   </div>
   <!-- Add your site or application content here -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -523,5 +552,4 @@ our tours</span>
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
